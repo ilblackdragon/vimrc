@@ -1,0 +1,4 @@
+vimrc
+=====
+
+VIM configuration package
