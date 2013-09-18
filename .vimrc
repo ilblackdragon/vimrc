@@ -1,28 +1,44 @@
+" ========================= Vundle ============================
+set nocompatible
+filetype off
+
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+" let Vundle manage Vundle
+" required! 
+Bundle 'gmarik/vundle'
+
+" You Complete Me plugin for code completion
+Bundle 'Valloric/YouCompleteMe'
+
 filetype plugin on
 
-syntax on                       " установить подсветку синтаксиса
-set expandtab                   " не использовать отступ табуляцией
-set ignorecase                  " игнорировать прописные/строчные при поиске
-set autoindent                  " установить автоотступ
+" =================== Settings for Editor ====================
+
+syntax on                       " enable syntax highlighting
+set expandtab                   " don't use tab for indentation
+set ignorecase                  " ignore case in search
+set autoindent                  " auto indentation
 set shiftwidth=4
-set tabstop=4                   " табуляция 4 пробела
+set tabstop=4                   " tab size is 4 spaces
 retab
 
-set hlsearch                    " Показывать все результаты при поиске
-set incsearch                   " автоматически искать при наборе
+set hlsearch                    " Show all results when search
+set incsearch                   " Auto search when start typing
 
-set nowrap                      " не переносить строку
-set sidescroll=5                " прокрутка
+set nowrap                      " Don't wrap strings (you may want this for LaTeX)
+set sidescroll=5                " scrolling
 
-set nu                          " Включаем нумерацию строк
-set numberwidth=5               " Ширина поля, выделяемая под нумерацию
+set nu                          " Turn on line numbering
+set numberwidth=5               " Width of column for line numbering
 
-set wildmenu                    " крутайа штуко - менюхи)
+set wildmenu                    " 
 
 set t_Co=256
 set makeprg=make  " run make
 
-colorscheme xoria256        " Стандартная цветовая схема
+colorscheme xoria256        " Default color scheme
 
 hi CursorLine cterm=NONE ctermbg=darkgray guibg=darkgray
 hi CursorColumn cterm=NONE ctermbg=darkgray guibg=darkgray
@@ -34,15 +50,15 @@ set ruler " display current line and column
 
 " ====================  MAPS  ============================
 
-" скомпилить
+" Compile
 nmap <F9> <Esc>:make<CR>
 imap <F9> <Esc>:make<CR>
 
-" сохранить
+" Save
 nmap <F2> <Esc>:w<CR>
 imap <F2> <Esc>:w<CR><Ins>
 
-" найти дальше
+" Continue search
 nmap <F3> <Esc>/<Up><CR>
 imap <F3> <Esc>/<Up><CR><Ins>
 
