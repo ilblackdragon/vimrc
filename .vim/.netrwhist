@@ -1,4 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =2
-let g:netrw_dirhist_1='/Users/salfordmacbookpro/Downloads/andrei-anufriev.2013-05-13/src/arrange'
-let g:netrw_dirhist_2='/Users/salfordmacbookpro/Downloads/assignment/features'
