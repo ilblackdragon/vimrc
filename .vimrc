@@ -10,7 +10,7 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 
 " You Complete Me plugin for code completion
-Bundle 'Valloric/YouCompleteMe'
+" Bundle 'Valloric/YouCompleteMe'
 
 filetype plugin on
 
@@ -47,6 +47,8 @@ set cursorline
 set cursorcolumn
 
 set ruler " display current line and column
+
+au BufRead,BufNewFile *.py,*.pyw,*.c,*.h set textwidth=79
 
 " ====================  MAPS  ============================
 
