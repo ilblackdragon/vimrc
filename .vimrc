@@ -1,3 +1,4 @@
+
 " ========================= Vundle ============================
 set nocompatible
 filetype off
@@ -11,6 +12,7 @@ Bundle 'gmarik/vundle'
 
 " You Complete Me plugin for code completion
 " Bundle 'Valloric/YouCompleteMe'
+source ~/.vim/plugin.vim
 
 filetype plugin on
 
